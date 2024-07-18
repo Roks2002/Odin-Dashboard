@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+#logo-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  width: 20%;
+}
+
+#dash-title {
+  color: white;
+  font-size: 25px;
+}
+.side-nav {
+  background-color: rgb(26, 26, 33);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.075);
+  display: grid;
+  grid-area: 1 / 1 / 4 / 2;
+  grid-auto-rows: max-content;
+  grid-template: max-content / max-content;
+  padding: 30px;
+  row-gap: 25px;
+  width: 15%;
+  height: 100vh;
+}
+
+.r-divider {
+  background-color: rgb(219, 221, 231);
+  height: 1px;
+  width: 100%;
+}
+
+.sidenav a {
+  color: aliceblue;
+}
+
+.side-nav a:visited {
+  text-decoration: none;
+  color: #898989;
+}
+
+.side-nav a {
+  text-decoration: none;
+}
+
+.sidebar-btn.img {
+}
