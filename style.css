@@ -7,52 +7,37 @@
 body {
   font-family: "Roboto", sans-serif;
 }
-
-#logo-title {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.logo {
-  width: 20%;
-}
-
-#dash-title {
-  color: white;
-  font-size: 25px;
-}
-.side-nav {
-  background-color: rgb(26, 26, 33);
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.075);
+.grid-container-containers {
   display: grid;
-  grid-area: 1 / 1 / 4 / 2;
-  grid-auto-rows: max-content;
-  grid-template: max-content / max-content;
-  padding: 30px;
-  row-gap: 25px;
-  width: 15%;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 30px;
+}
+
+.grid-container-containers > div {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  border: 1px solid #2196f3;
+}
+
+.grid-container-container1 {
+  grid-area: 1 / 1 / span 6 / span 1;
   height: 100vh;
+  background-color: #2196f3;
 }
 
-.r-divider {
-  background-color: rgb(219, 221, 231);
-  height: 1px;
-  width: 100%;
+.grid-container-container2 {
+  grid-area: 1 / 2 / span 1 / span 3;
 }
 
-.sidenav a {
-  color: aliceblue;
+.grid-container-container3 {
+  grid-area: 2 / 2 / span 5 / span 2;
 }
 
-.side-nav a:visited {
-  text-decoration: none;
-  color: #898989;
+.grid-container-container4 {
+  grid-area: 2 / 4 / span 2 / span 1;
 }
 
-.side-nav a {
-  text-decoration: none;
-}
-
-.sidebar-btn.img {
+.grid-container-container5 {
+  grid-area: 4 / 4 / span 3 / span 1;
 }
